@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disciplina"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <AutoCompleteTextView
+        android:completionThreshold="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edNomeDisciplinaAtualizar"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semestre"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+
+        <Spinner
+            android:id="@+id/spListaSemestresAtualizar"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"></Spinner>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limite de Faltas"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edLimiteFaltasAtualizar"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meta"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edMetaAtualizar"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <Spinner
+        android:id="@+id/spStatusAtualizar"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"></Spinner>
+
+
+    <Button
+        android:id="@+id/btAtualizarDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_botoes"
+        android:layout_margin="@dimen/icon_bottom_margin"
+        android:text="ATUALIZAR"
+        tools:targetApi="lollipop" />
+
+
+</LinearLayout>

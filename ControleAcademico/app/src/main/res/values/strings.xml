@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Controle Academico</string>
+    <string name="loading">Loading…</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+
+    <string name="viewGithub">View on GitHub</string>
+    <string name="reportProblem">Problem Report</string>
+    <string name="viewWebsite">Developer Website</string>
+    <string name="actionSave">Salvar na Galeria</string>
+
+    <string name="animateX">Animate X</string>
+    <string name="animateY">Animate Y</string>
+    <string name="animateXY">Animação XY</string>
+
+    <string name="actionToggleValues">Alternar Valores</string>
+    <string name="actionToggleYValues">Alternar valores-Y</string>
+    <string name="actionToggleXValues">Alternar Valores-X</string>
+
+    <string name="actionToggleIcons">Toggle Icons</string>
+    <string name="actionToggleHighlight">Toggle Highlight</string>
+    <string name="actionTogglePinch">Toggle PinchZoom</string>
+    <string name="actionToggleAutoScale">Alternar Autoescala</string>
+
+    <string name="actionToggleLineValues">Toggle Line Values</string>
+    <string name="actionToggleBarValues">Alternar Valores </string>
+    <string name="actionToggleBarBorders">Alternar Bordas das barras</string>
+    <string name="actionToggleFilled">Toggle Filled</string>
+    <string name="actionToggleCircles">Toggle Circles</string>
+    <string name="actionToggleCandleShadow">Toggle Shadow Color</string>
+
+    <string name="actionToggleCubic">Toggle Cubic</string>
+    <string name="actionToggleStepped">Toggle Stepped</string>
+    <string name="actionToggleHorizontalCubic">Toggle Horizontal Cubic</string>
+
+    <string name="actionAddEntry">Add Entry</string>
+    <string name="actionFeedMultiple">Add Multiple</string>
+    <string name="actionRemoveEntry">Remove Entry</string>
+    <string name="actionAddDataSet">Add Data Set</string>
+    <string name="actionRemoveDataSet">Remove Data Set</string>
+    <string name="actionClearChart">Clear chart</string>
+
+    <string name="actionTogglePercent">Alternar Percentual</string>
+    <string name="actionToggleMinAngles">Toggle Minimum Angles</string>
+    <string name="actionToggleHole">Alternar preenchimento</string>
+    <string name="actionToggleCurvedSlices">Toggle Curved Slices</string>
+    <string name="actionDrawCenterText">Desenhar texto do centro</string>
+    <string name="actionToggleHighlightCircle">Toggle Highlight Circle</string>
+    <string name="actionToggleRotation">Toggle Rotation</string>
+    <string name="actionToggleSpin">Animação de Giro</string>
+
+    <string name="dash">-</string>
+    <string name="scrollViewStart">START OF SCROLLVIEW</string>
+    <string name="scrollViewEnd">END OF SCROLLVIEW</string>
+    <string name="title_activity_graficos">Graficos</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

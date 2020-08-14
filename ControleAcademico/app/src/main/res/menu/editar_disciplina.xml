@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itMenuEditarDisciplina"
+        android:title="Editar Disciplina"/>
+    <item
+        android:id="@+id/itMenuExcluirDisciplina"
+        android:title="Excluir Disciplina"/>
+
+</menu>

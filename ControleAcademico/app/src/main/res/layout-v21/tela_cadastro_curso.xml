@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/actionModeBackground"
+    android:orientation="vertical"
+    android:fadeScrollbars="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            style="@style/ThemeOverlay.FirebaseIcon"
+            android:id="@+id/appIcon"
+            android:layout_width="130dp"
+            android:layout_height="122dp"
+            android:contentDescription="Imagem app"
+            android:src="@mipmap/logo_app_foreground"
+            android:layout_weight="1"
+            android:foreground="@android:color/transparent"
+            android:layout_gravity="left"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elegantTextHeight="true"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:text="Controle Acadêmico"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMSGBemVindo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem Vindo(a)"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/tvMSGComplementar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Por favor, informe os dados do curso:"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curso"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+        <EditText
+            android:id="@+id/etNomeCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universidade"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+        <EditText
+            android:id="@+id/etUniversidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ano de início"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+        <EditText
+            android:id="@+id/etAnoInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acessar"
+        android:id="@+id/btAcessar"
+        android:layout_margin="@dimen/icon_bottom_margin"
+        android:background="@drawable/shape_botoes" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TelaGraficoMeta">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.15">
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="3dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:max="4"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvXMax"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:gravity="right"
+            android:text="@string/dash"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="8" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_weight="0.5">
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="3"
+        android:max="4"
+        android:paddingBottom="12dp" />
+    <TextView
+        android:id="@+id/tvYMax"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="@string/dash"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>

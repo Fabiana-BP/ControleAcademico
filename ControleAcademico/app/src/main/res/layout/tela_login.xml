@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/appIcon"
+        style="@style/ThemeOverlay.FirebaseIcon"
+        android:layout_width="184dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:contentDescription="Imagem app"
+        android:src="@mipmap/logo_app_foreground" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:elegantTextHeight="true"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Controle Acadêmico"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tvStatusLogin"
+            style="@style/ThemeOverlay.MyTextDetail"
+            android:text=""
+            android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_100">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="14dp"
+            android:visibility="visible"
+            tools:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/signOutAndDisconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/btSignOutButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:text="@string/sign_out"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+            <Button
+                android:id="@+id/btDisconnectButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:layout_weight="1"
+                android:text="@string/disconnect"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

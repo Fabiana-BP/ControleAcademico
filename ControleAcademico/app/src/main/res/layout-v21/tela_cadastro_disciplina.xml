@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disciplina"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:completionThreshold="1"
+        android:id="@+id/edNomeDisciplina"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:text="Semestre"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Spinner
+        android:id="@+id/spListaSemestres"
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"></Spinner>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:text="Limite de Faltas"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/edLimiteFaltas"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:text="Meta"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/edMeta"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRAR"
+        android:background="@drawable/shape_botoes"
+        android:layout_margin="@dimen/icon_bottom_margin"
+        android:id="@+id/btCadastrarDisciplina"/>
+</LinearLayout>
+</ScrollView>

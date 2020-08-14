@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="@color/cardview_dark_background"
+        android:text="Disciplina"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/spDisciplinaAtualizarTarefa"
+        >
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="@color/cardview_dark_background"
+        android:text="Descrição"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:inputType="text"
+        android:id="@+id/edDescricaoAtualizarTarefa"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:text="Tipo"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spTiposAtualizarTarefas"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+    </Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/edOutrosTiposAtualizarTarefa"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="@color/cardview_dark_background"
+        android:text="Data de entrega"/>
+
+    <EditText
+        android:id="@+id/edDataEntregaAtualizarTarefas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:editable="false" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_dark_background"
+            android:text="Valor"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:textColor="@color/cardview_dark_background"
+            android:text="Prioridade"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:textColor="@color/cardview_dark_background"
+            android:text="Nota"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:id="@+id/edValorAtualizarTarefas"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:id="@+id/edprioridadeAtualizarTarefa"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:id="@+id/edNotaTarefa"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATUALIZAR"
+        android:background="@drawable/shape_botoes"
+        android:layout_margin="@dimen/icon_bottom_margin"
+        android:id="@+id/btAtualizarTarefa" />
+</LinearLayout>
+</ScrollView>

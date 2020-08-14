@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Disciplina"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/spDisciplinaTarefa">
+    </Spinner>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Descrição"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:inputType="text"
+        android:id="@+id/edDescricaoTarefa"/>
+
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Tipo"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/spTiposTarefas">
+    </Spinner>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/edOutrosTiposTarefa"
+        android:inputType="text"
+        android:enabled="false"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Data de entrega"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/edDataEntrega"
+        android:editable="false"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="Valor"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="Prioridade"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/edValorTarefas"
+        android:inputType="numberDecimal"
+        android:layout_weight="1"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:id="@+id/edprioridadeTarefa"
+        android:inputType="numberDecimal"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="CADASTRAR"
+        android:id="@+id/btCadastrarTarefa"
+        android:background="@drawable/shape_botoes"
+        android:layout_margin="@dimen/icon_bottom_margin"/>
+
+</LinearLayout>
+
+</ScrollView>
