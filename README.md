@@ -5,3 +5,5 @@
 ### Observações
 
 1) Este sistema foi construído de forma que o usuário precise logar na sua conta do google para ter acesso ao sistema. Por esse motivo, para que todas funcionalidades do sistema operem é necessário criar conta, logar no Firebase e associar o token do cliente ao programa.
+
+2) As prévias das telas construídas estão no arquivo Imagens-telas.pdf.
